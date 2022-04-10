@@ -1,25 +1,8 @@
-# qbraid-sdk-demo
+# qbraid-sdk-challenge
 
-Please make sure you have installed the qbraid-sdk environment. You will just
-need to follow the same procedure as
-[Installing Amazon Braket in qBraid](../../qbraid_braket_setup/Install_Braket.ipynb)
-but install the qbraid-SDK environment.
 
-To access Amazon Braket devices using the qBraid SDK environment, make sure to
-run `qbraid enable account qbraid_sdk`. You can refer to the
-[Enable account tutorial](../../qbraid_braket_setup/Enable_account.ipynb).
 
-## Translate your circuits from Qiskit to Amazon Braket etc.
-
-The qbraid sdk allows users to transpile circuits from various quantum computing
-frameworks including Amazon Braket, cirq, qiskit, pyquil, and PennyLane. Please
-see the `qbraid_sdk_transpiler.ipynb` notebook for more information.
-
-## Submit jobs on various simulators and backends all in one go.
-
-With the sdk you can also submit jobs to various backends. Currently we only
-support full service access to Amazon Braket ie
-`qbraid enable account qbraid_sdk` will allow you to submit jobs using qBraid
-credits. If you are interested in submitting jobs to say IBMQ, you will need to
-include your own access key provided by IBM. Please see the `qbraid_sdk.ipynb`
-notebook for more information.
+## Project Description
+We modified the "Getting started with Amazon Braket" and "Enable account to access Braket QPUs" demos in order 
+to create and measure outputs from a circuit that uses two EPR pairs (shared between wires 0 and 1, and 
+2 and 3) and teleportation to create an EPR pair between wires 3 and 0.
